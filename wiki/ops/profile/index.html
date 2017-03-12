@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tracing &mdash; Worry&#39;s Wiki  文档</title>
+  <title>Profiling &mdash; Worry&#39;s Wiki  文档</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="搜索" href="../../search.html"/>
     <link rel="top" title="Worry&#39;s Wiki  文档" href="../../index.html"/>
         <link rel="up" title="Ops" href="../index.html"/>
-        <link rel="next" title="strace" href="strace.html"/>
-        <link rel="prev" title="perf" href="../profile/perf.html"/> 
+        <link rel="next" title="oprofile" href="oprofile.html"/>
+        <link rel="prev" title="Shaker" href="../benchmark/shaker.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -92,15 +92,12 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Ops</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../tunning.html">Tunning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../benchmark/index.html">Benchmark</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../profile/index.html">Profiling</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Tracing</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="strace.html">strace</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_tracing.html">Library Tracing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="kernel_tracing.html">Kernel Tracing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ftrace.html">ftrace</a></li>
-<li class="toctree-l3"><a class="reference internal" href="systemtap.html">SystemTap</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Profiling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="oprofile.html">oprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="perf.html">perf</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../trace/index.html">Tracing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../subsystem_tunning/index.html">Subsystem Tunning</a></li>
 </ul>
 </li>
@@ -151,13 +148,13 @@
         
           <li><a href="../index.html">Ops</a> &raquo;</li>
         
-      <li>Tracing</li>
+      <li>Profiling</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/ops/trace/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/ops/profile/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -170,15 +167,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="tracing">
-<h1>Tracing<a class="headerlink" href="#tracing" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="profiling">
+<h1>Profiling<a class="headerlink" href="#profiling" title="永久链接至标题">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="strace.html">strace</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_tracing.html">Library Tracing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kernel_tracing.html">Kernel Tracing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ftrace.html">ftrace</a></li>
-<li class="toctree-l1"><a class="reference internal" href="systemtap.html">SystemTap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oprofile.html">oprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="perf.html">perf</a></li>
 </ul>
 </div>
 </div>
@@ -193,10 +187,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="strace.html" class="btn btn-neutral float-right" title="strace" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="oprofile.html" class="btn btn-neutral float-right" title="oprofile" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../profile/perf.html" class="btn btn-neutral" title="perf" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../benchmark/shaker.html" class="btn btn-neutral" title="Shaker" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

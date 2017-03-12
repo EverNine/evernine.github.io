@@ -10,8 +10,8 @@ Welcome to Worry's Wiki's documentation!
    :caption: Contents:
    :glob:
 
-   ops/*
-   version_control/*
+   ops/index
+   version_control/git
 
 
 

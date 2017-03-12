@@ -2,8 +2,9 @@ Tracing
 ==========================
 
 .. toctree::
-    strace
-    library_tracing
-    kernel_tracing
-    ftrace
-    systemtap
+
+   strace
+   library_tracing
+   kernel_tracing
+   ftrace
+   systemtap
