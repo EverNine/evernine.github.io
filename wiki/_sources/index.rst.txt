@@ -8,8 +8,11 @@ Welcome to Worry's Wiki's documentation!
 
 .. toctree::
    :caption: Contents:
+   :glob:
 
    ops/index
+   ops/**/*
+   version_control/git
 
 
 
