@@ -13,10 +13,3 @@ Welcome to Worry's Wiki's documentation!
    ops/index
    version_control/git
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
