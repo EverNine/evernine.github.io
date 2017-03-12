@@ -4,5 +4,5 @@ Ops
 .. toctree::
    :caption: Contents:
 
-    tunning
-    trace/index
+   tunning
+   trace/index

@@ -9,7 +9,7 @@ Welcome to Worry's Wiki's documentation!
 .. toctree::
    :caption: Contents:
 
-    ops/index
+   ops
 
 
 
