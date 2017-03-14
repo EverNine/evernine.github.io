@@ -7,6 +7,7 @@ Welcome to Worry's Wiki's documentation!
 ========================================
 
 .. toctree::
+   :maxdepth: 2
    :caption: Contents:
    :glob:
 
