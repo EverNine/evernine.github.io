@@ -211,87 +211,115 @@
 <div class="section" id="id3">
 <h3>度量目标<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li>明确你要以什么指标来衡量性能
-+ 响应时间
-+ CPU占用率
-+ 内存占用率
-+ 任务处理速度
-+ 其他</li>
-<li>聚焦在单一指标上，但同时需要观察其他指标
-+ 对某一指标的优化会影响其他指标</li>
-<li>自动化你的度量系统
-+ 尽可能地将衡量性能指标的过程傻瓜化</li>
+<li>明确你要以什么指标来衡量性能<ul>
+<li>响应时间</li>
+<li>CPU占用率</li>
+<li>内存占用率</li>
+<li>任务处理速度</li>
+<li>其他</li>
+</ul>
+</li>
+<li>聚焦在单一指标上，但同时需要观察其他指标<ul>
+<li>对某一指标的优化会影响其他指标</li>
+</ul>
+</li>
+<li>自动化你的度量系统<ul>
+<li>尽可能地将衡量性能指标的过程傻瓜化</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="id4">
 <h3>建立基线<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li>理解wire speed</li>
-<li>从一个干净的系统开始
-+ 测试前重启系统、清空cache</li>
+<li>从一个干净的系统开始<ul>
+<li>测试前重启系统、清空cache</li>
+</ul>
+</li>
 <li>不要在有业务负载的环境进行测试</li>
 <li>不要过早地对系统进行修改</li>
-<li>理解环境信息与测试结果
-+ 性能数据的解读结果取决于解读他的人</li>
+<li>理解环境信息与测试结果<ul>
+<li>性能数据的解读结果取决于解读他的人</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="id5">
 <h3>选择工具<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li>可用性是工具选择的第一关注点
-+ 老版本Linux内核缺少部分子系统
-+ 部分内核版本没有集成一些工具
-+ 不要把时间花在工具上而不是实际的问题上</li>
+<li>可用性是工具选择的第一关注点<ul>
+<li>老版本Linux内核缺少部分子系统</li>
+<li>部分内核版本没有集成一些工具</li>
+<li>不要把时间花在工具上而不是实际的问题上</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="id6">
 <h3>验证你的工具<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li>工具是否满足商用要求？
-+ 关注工具的可靠性与稳定性
-+ 定义不可用的标准</li>
-<li>引入的杂音
-+ 是否会引入不可接受的额外负载</li>
+<li>工具是否满足商用要求？<ul>
+<li>关注工具的可靠性与稳定性</li>
+<li>定义不可用的标准</li>
+</ul>
+</li>
+<li>引入的杂音<ul>
+<li>是否会引入不可接受的额外负载</li>
+</ul>
+</li>
 <li>能否与其他工具共存</li>
 </ul>
 </div>
 <div class="section" id="id7">
 <h3>了解你的系统<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li>明确性能瓶颈
-+ 从通用的工具开始
-+ 善用Profile工具</li>
-<li>花时间去了解更多细节
-+ 内核行为
-+ 硬件架构
-+ CPU能力</li>
+<li>明确性能瓶颈<ul>
+<li>从通用的工具开始</li>
+<li>善用Profile工具</li>
+</ul>
+</li>
+<li>花时间去了解更多细节<ul>
+<li>内核行为</li>
+<li>硬件架构</li>
+<li>CPU能力</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="id8">
 <h3>深入你的系统<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li>使用更加精确的工具进行测量</li>
-<li>使用instrumentation工具观察软件的内部
-+ Systemtap
-+ gdb
-+ 要求开发者修改代码使其可读</li>
-<li>用trace工具增加观测结果的可靠性
-- ftrace
-- strace
-- ltrace</li>
+<li>使用instrumentation工具观察软件的内部<ul>
+<li>Systemtap</li>
+<li>gdb</li>
+<li>要求开发者修改代码使其可读</li>
+</ul>
+</li>
+<li>用trace工具增加观测结果的可靠性<ul>
+<li>ftrace</li>
+<li>strace</li>
+<li>ltrace</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="id9">
 <h3>修改你的系统<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li>根据上一个测试周期的结果决定要修改什么</li>
-<li>确保你在一个稳定版本上进行修改
-+ 性能调优应是开发环节的最后一步</li>
+<li>确保你在一个稳定版本上进行修改<ul>
+<li>性能调优应是开发环节的最后一步</li>
+</ul>
+</li>
 <li>不要试错</li>
 <li>一次修改一个元素</li>
-<li>考虑副作用
-+ 是否增加了资源占用
-+ 是否影响了其他测量指标</li>
+<li>考虑副作用<ul>
+<li>是否增加了资源占用</li>
+<li>是否影响了其他测量指标</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -310,9 +338,11 @@
 <div class="section" id="id12">
 <h3>自动化<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li>将重点放在可重复性与自动化上
-+ 让调优过程更加人性化
-+ 微小的改进总是能带来巨大的收益</li>
+<li>将重点放在可重复性与自动化上<ul>
+<li>让调优过程更加人性化</li>
+<li>微小的改进总是能带来巨大的收益</li>
+</ul>
+</li>
 <li>在调优过程中引入变更管理</li>
 </ul>
 </div>
@@ -320,10 +350,14 @@
 <h3>性能测量误区<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li>不要为了测量性能指标而变更你的系统</li>
-<li>应以在不影响性能的情况下测量性能为目标
-+ 牢记海森堡测不准原理</li>
-<li>通用规则：越高的测量频率会引入越高的额外负载
-+ 在测量精度与额外负载间进行权衡</li>
+<li>应以在不影响性能的情况下测量性能为目标<ul>
+<li>牢记海森堡测不准原理</li>
+</ul>
+</li>
+<li>通用规则：越高的测量频率会引入越高的额外负载<ul>
+<li>在测量精度与额外负载间进行权衡</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -333,10 +367,12 @@
 <h3>测量工具误区<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li>理解你使用的工具做了什么</li>
-<li>一些操作可能会影响整体的性能
-+ 插入调试代码
-+ 监控特定的场景
-+ 将性能数据写入磁盘</li>
+<li>一些操作可能会影响整体的性能<ul>
+<li>插入调试代码</li>
+<li>监控特定的场景</li>
+<li>将性能数据写入磁盘</li>
+</ul>
+</li>
 <li>工具会说谎：如果可能的话，与第二次结果进行比较</li>
 <li>记录工具的结果与单位</li>
 <li>不要生产你不需要的数据</li>
